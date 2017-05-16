@@ -1,0 +1,43 @@
+{
+  "name": "git-tower-husky-precommit-bug",
+  "version": "1.0.0",
+  "description": "An example repository which uses husky to configure a precommit script",
+  "main": "index.js",
+  "scripts": {
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kohlmannj/git-tower-husky-precommit-bug.git"
+  },
+  "keywords": [
+    "Git",
+    "Tower",
+    "Husky",
+    "NPM",
+    "Node",
+    "Precommit",
+    "Bug"
+  ],
+  "author": "Joseph Kohlmann <joseph.kohlmann@nytimes.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kohlmannj/git-tower-husky-precommit-bug/issues"
+  },
+  "homepage": "https://github.com/kohlmannj/git-tower-husky-precommit-bug#readme",
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^15.0.1",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^5.0.3",
+    "eslint-plugin-react": "^7.0.1",
+    "husky": "^0.13.3",
+    "lint-staged": "^3.4.1"
+  }
+}
